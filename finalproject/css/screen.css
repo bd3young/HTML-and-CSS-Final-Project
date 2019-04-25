@@ -1,0 +1,210 @@
+* 
+{
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    background-color: darkgreen
+}
+nav
+{
+    margin-top: 12px;
+    margin-right: 18px;
+}
+header
+{
+    font-size: 2em;
+    text-shadow: 1em;
+}
+div
+{
+    flex: 1;
+}
+h1
+{
+    font-size: 2em;
+    text-shadow: 2px 2px green;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+}
+h2
+{
+    font-size: 30px;
+    text-shadow: 1px 1px green;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+}
+summary
+{
+    font-size: 20px;
+    color:black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px;
+}
+.sidenav 
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: gray;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a 
+{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover 
+{
+    color: #f1f1f1;
+}
+.sidenav .closebtn 
+{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#main 
+{
+    transition: margin-left .5s;
+    padding: 16px;
+    width: auto;
+}
+@media screen and (max-height: 450px) 
+{
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+footer
+{
+    color: black;
+    background-color: black;
+    text-align: center;
+    width: auto;
+    padding: 20px;
+}
+footer i
+{
+    align-content: center;
+}
+footer p
+{
+    text-align: center;
+    margin: 40px;
+}
+.icon-bar 
+{
+    width: 100%; /* Full-width */
+    background-color: green; 
+    overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a 
+{
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 12px 12px; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: black; /* White text color */
+    font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover 
+{
+    background-color: black; /* Add a hover color */
+    color: green;
+}
+a:link
+{
+    color: black;
+    text-decoration: gray;
+}
+a:visited
+{
+    color: Black;
+    text-decoration: black;
+}
+a:hover
+{
+    color: green;
+    text-decoration: black;
+    background-color: black;
+}
+a:active
+{
+    color: darkslategray;
+    text-decoration: black;
+}
+nav ul 
+{
+    background: linear-gradient(0deg, darkgreen, green, darkgreen); 
+    box-shadow: 6px 6px 6px black;
+    padding: 0 20px;
+    border-radius: 10px; 
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    color:black;
+    font-weight:900;
+}
+nav ul li 
+{
+    display:inline-table;
+}
+nav ul li:hover 
+{
+    background: black;
+}
+nav ul li a 
+{
+    display: block; 
+    padding: 25px 40px;
+    color:green; 
+    text-decoration: none;
+}
+nav ul li a 
+{
+    display: block; 
+    padding: 25px 40px;
+    color:white; 
+    text-decoration: none;
+}
+nav ul li:hover a 
+{
+    color:green; 
+    text-decoration: none;
+}
+nav ul li:hover > ul 
+{
+    display:flex;
+    flex-direction:column;
+}
+button
+{
+	text-align:center;
+	width:75px;
+	padding:10px;
+    box-shadow:3px 3px black;
+    margin: 20px;
+}
+button:hover
+{
+	background-color:black;
+	color:green;
+	box-shadow:2px 2px gray;	
+}
